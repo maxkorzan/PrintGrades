@@ -5,14 +5,13 @@ public class Main {
         Scanner keyboard = new Scanner(System.in);
         String i = "y";
 
-        //prompt user for score
-        //System.out.print("Enter an exam score: ");
-        //int score = keyboard.nextInt();
-
+        //while loop to repeat prompt
         while (i.equalsIgnoreCase("y")) {
+            //prompt user for score
             System.out.print("Enter an exam score: ");
             int score = keyboard.nextInt();
 
+            //determining letter grade for score
             if (score >= 90)
                 System.out.println("Great job. Your grade is A.");
             else if (score >= 80)
@@ -25,6 +24,7 @@ public class Main {
                 System.out.println("Go back to school");
             }
 
+            //prompting user to repeat or exit program
             while(true) {
                 System.out.print("Do you want to enter another score (Y/N)? ");
                 i = keyboard.next();
